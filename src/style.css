@@ -28,7 +28,7 @@ h1 {
   }
 /* PHONES SCREENS*/
 
-/* @media only screen and (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
   body{
     background: #006400;
@@ -82,11 +82,11 @@ input{
   background-color: #800000;
   color: #008000;
 }
-} */
+} 
 
 /* iPAD, TABLETS SCREENS*/
 
-@media (max-width: 786px) {
+@media (min-width: 786px) {
   body{
     background-color:#000080;
   }
@@ -102,7 +102,7 @@ input{
 
   .counter-container {
     width: 50%;
-    height: 70%;
+    height: 100vh;
     margin: 0 auto;
     padding: 30px;
     border: 1px solid #ccc;
@@ -139,7 +139,7 @@ input{
 } 
 
 /* LAPTOS */
-@media (min-width: 787px) and (max-width:900px) {
+@media (min-width: 900px) and (max-width:1800px) {
   body{
     background: #006400;
     color: white;
