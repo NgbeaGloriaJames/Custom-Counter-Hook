@@ -5,6 +5,7 @@
 }
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 1rem;
   font-family: system-ui, sans-serif;
@@ -16,9 +17,18 @@ h1 {
   font-weight: 800;
   font-size: 1.5rem;
 }
-
+ .counter-container {
+    height: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #90EE90;
+    box-shadow: 0 0 5px rgba( 0, 128, 0, 1);
+  }
 /* PHONES SCREENS*/
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+/* @media only screen and (min-width: 320px) and (max-width: 480px) {
 
   body{
     background: #006400;
@@ -31,15 +41,7 @@ h1 {
     font-size: 20px;
     margin-block-end: 20px;
   }
-  .counter-container {
-    height: 70%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #90EE90;
-    box-shadow: 0 0 5px rgba( 0, 128, 0, 1);
-  }
+ 
   
 .counter-value {
   font-size: 20px;
@@ -80,18 +82,18 @@ input{
   background-color: #800000;
   color: #008000;
 }
-}
+} */
 
 /* iPAD, TABLETS SCREENS*/
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 786px) {
   body{
-    background-color:#00008B;
+    background-color:#000080;
   }
 
   h1 {
     text-align: center;
-    margin-block-end: 10px;
+    margin-block-end: 20px;
   }
   .counter-value{
     margin-block-start: 2px;
@@ -99,6 +101,7 @@ input{
   }
 
   .counter-container {
+    width: 50%;
     height: 70%;
     margin: 0 auto;
     padding: 30px;
@@ -124,9 +127,9 @@ input{
     top: 20px;
     background-color: white;
     border: none;
-  }
+  } 
   .update{
-    margin-block-start: 70px;
+    margin-block-start: 40px;
     width: 50%;
   }
   .counter-button:hover {
@@ -136,22 +139,54 @@ input{
 } 
 
 /* LAPTOS */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 787px) and (max-width:828px) {
+  body{
+    background: #006400;
+    color: white;
+    height:100vh;
+  }
+  h1 {
+    text-align: center;
+    margin-block-end: 10px;
+  }
+  .counter-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #90EE90;
+    width: 70%;
+  }
   .counter-value {
+    color: #800000;
     position: relative;
     top: -40px;
-    left: 30%;
+    left: -10%;
     font-size: 20px;
   }
   .update{
     margin-block-start: 5px;
-    width: 30%;
+    width: 20%;
+    position: fixed;
+    right: 38%;
+    height: 10%;
   }
   input{
     display: block;
+    height: 60px;
+    margin-inline-start: 31%;
+    position: absolute;    
   }
   .counter-button {
-    margin-block-end: 40px;
-    
+    margin-block-end: 20px;
+    background-color:#008000;
+    color: #800000;
   }
+  .counter-button:hover {
+    background-color: #800000;
+    color: #008000;
+  }
+ .errorstage{
+  margin-left: 45%;
+  height: 10%;
+ }
+ 
 }
