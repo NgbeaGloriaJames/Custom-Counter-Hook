@@ -1,0 +1,36 @@
+/* CounterComponent.css */
+
+.counter-container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #D2B48C;
+  box-shadow: 0 0 5px rgba( #A0522D);
+}
+
+.counter-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  width: 300px;
+  margin-top: 50px;
+}
+
+
+.counter-button {
+  margin: 0 10px;
+  font-size: 18px;
+  background-color: #008080;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.counter-button:hover {
+  background-color: #333;
+  color: #008080 ;
+}
