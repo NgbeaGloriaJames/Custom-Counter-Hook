@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": false,
   "dependencies": {
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^16.14.0",
     "react-router-dom": "6.17.0"
   },
   "scripts": {
@@ -14,7 +14,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-scripts": "*"
+    "react-scripts": "*",
+    "webpack": "^5.89.0",
+    "webpack-dev-server": "^4.15.1"
   },
   "browserslist": {
     "production": [
